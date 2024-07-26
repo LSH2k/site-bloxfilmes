@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --cor0: #FA1B01;
+    --cor1: #fa1a0148;
+    --font0: "Roboto", sans-serif;
+    --font1: "Pacifico", cursive;
+}
+
+body {
+    font-family: var(--font0);
+}
+
+.navbar {
+    background-color: var(--cor0);
+}
+
+#header .nav .nav-link.active {
+    background-color: white;
+    color: var(--cor0);
+}
+
+#header .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-filmes .nav-link.active:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: var(--cor1);
+}
+
+.section-title {
+    font-family: var(--font1);
+}
+
+#sobre, #filmes {
+    background-color: var(--cor1);
+}
+
+.nav-filmes button {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 6px;
+}
+
+.nav-filmes button:hover {
+    background-color: #fa1a011e;
+}
+
+.text-colored {
+    color: var(--cor0);
+}
+
+.nav-filmes .nav-link.active,
+#contato button {
+    background-color: var(--cor0);
+    color: white;
+}
+
+.nav-filmes .nav-link:hover {
+    color: var(--cor0);
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+footer p {
+    background-color: var(--cor0);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
